@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Public Sans";
+  }
+}
+
+@layer components {
+  .gradient {
+    @apply bg-gradient-to-r from-primary-lime_green to-primary-bright_cyan;
+  }
+
+  .navIndicator {
+    @apply opacity-0 group-hover:opacity-100 transition-opacity  w-full h-1 bg-primary-lime_green;
+  }
+}
